@@ -1,0 +1,329 @@
+header {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.marginrule {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.links {
+    display: inline;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo {
+    height: 30px;
+}
+
+.heroTitle{
+    text-transform: uppercase;
+    padding: 0 30px;
+    color: white;
+    font-size: 60px;
+
+}
+
+.border {
+    width: 500px;
+    height: 250px;
+    border: solid white;
+    margin-top: 120px;
+  
+}
+
+#interactImage {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+}
+
+#text {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    right: 150px;
+    top: 170px;
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.button1 {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+.container1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 25px;
+    row-gap: 20px;
+    
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    margin-top: 70px;
+}
+
+.footerbox  {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.rights {
+    color:dimgray;
+}
+
+.socials{
+    margin-right: 5px;
+   
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.alata-regular {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  
+  .josefin-sans-normal {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.VRTitle {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.VRtext {
+    font-size: 15px;
+}
+
+.ImageCap {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+.eachContainer {
+    position: relative;
+}
+
+
+.close-icon ,.mobileTop, #mobileNav, #hamburger, #interactImageMobile, .eachImageMobile{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .footerbox {
+        display: block;
+        text-align: center;
+
+    }
+
+
+    .links {
+        display: block;
+        margin-top: 10px;
+       
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+    .marginrule {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .eachImageMobile{
+        display: block;
+        width: 100%;
+        object-fit: contain;
+
+    }
+    .eachImage {
+        display: none;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+    header {
+        background-image: url("./images/mobile/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100%;
+    }
+    .navDesktop {
+        display: none;
+    }
+    .border {
+        width: 90%;
+        height: 250px;
+        border: solid white;
+        margin-top: 120px;
+      
+    }
+    .heroTitle{
+        text-transform: uppercase;
+        padding: 15px;
+        color: white;
+        font-size: 40px;
+    
+    }
+    #text {
+        display: block;
+        padding: 0;
+        position: static;
+        text-align: center;
+    }
+
+    .container{
+        display: block;
+      
+        margin-top: 0;
+    
+    }
+    .eachImageMobile {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+
+    }
+    #interactImage {
+        display:  none;
+        
+    }
+
+    #interactImageMobile {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+    .VRtext {
+        padding: 10px;
+    }
+    .container1 {
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+   
+    #hamburger {
+        display: flex;
+        margin-bottom: 5px;
+    }
+    #mobileNav {
+        display: none;
+    }
+
+    .linksMobile {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .navMobile {
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+
+
+    }
+
+    .close{
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+
+    .mobileTop {
+        display: block;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .linkArea {
+        position: absolute;
+        top: 30%;
+    }
+
+    .linksMobile {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        font-size: 20px;
+
+    }
+
+
+
+   
+}
